@@ -1,0 +1,70 @@
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+[
+  {
+    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/M63H24W7JF0-L302-ALTGHOST?wid=1500&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
+    "name": "CHECK PRINT SHIRT",
+    "price": 110,
+    "rating": 4
+  },
+  {
+    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/FLGLO4FAL12-BEIBR?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+    "name": "GLORIA HIGH LOGO SNEAKER",
+    "price": 91,
+    "rating": 3
+  },
+  {
+    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/HWVG6216060-TAN?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+    "name": "CATE RIGID BAG",
+    "price": 94.5,
+    "rating": 2
+  },
+  {
+    "imgUrl": "http://guesseu.scene7.com/is/image/GuessEU/WC0001FMSWC-G5?wid=520&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
+    "name": "GUESS CONNECT WATCH",
+    "price": 438.9,
+    "rating": 5
+  },
+  {
+    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/AW6308VIS03-SAP?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+    "name": "'70s RETRO GLAM KEFIAH",
+    "price": 20,
+    "rating": 3
+  }
+]
+
+
+###
+PUT http://localhost:3000/carts/7d1df6a7-8160-4813-902b-92eea0b0ce48
+Content-Type: application/json
+
+{
+  "id": "7d1df6a7-8160-4813-902b-92eea0b0ce48",
+  "productList": [
+    {
+      "count": 1,
+      "product": {
+        "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/FLGLO4FAL12-BEIBR?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+        "name": "GLORIA HIGH LOGO SNEAKER",
+        "price": 91,
+        "rating": 3
+      }
+    },
+    {
+      "count": 1,
+      "product": {
+        "imgUrl": "http://guesseu.scene7.com/is/image/GuessEU/WC0001FMSWC-G5?wid=520&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
+        "name": "GUESS CONNECT WATCH",
+        "price": 438.9,
+        "rating": 5
+      }
+    }
+  ],
+  "subTotal": 529.9,
+  "taxTotal": 37.09,
+  "shippingTotal": 0,
+  "costTotal": 566.99
+}
+
